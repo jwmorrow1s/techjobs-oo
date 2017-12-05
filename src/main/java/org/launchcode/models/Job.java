@@ -19,6 +19,18 @@ public class Job {
         nextId++;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public static int getNextId() {
+        return nextId;
+    }
+
+    public static void setNextId(int nextId) {
+        Job.nextId = nextId;
+    }
+
     public Job(String aName, Employer aEmployer, Location aLocation,
                PositionType aPositionType, CoreCompetency aSkill) {
 
