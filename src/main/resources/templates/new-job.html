@@ -37,7 +37,7 @@
 
 
         <div class="form-group">
-            <label th:for="positionType">Employer</label>
+            <label th:for="positionType">Position Type</label>
             <select th:field="*{positionType}">
                 <option th:each="positionType : *{positionTypes}"
                         th:value="${positionType}"
@@ -46,7 +46,7 @@
         </div>
 
         <div class="form-group">
-            <label th:for="coreCompetency">Employer</label>
+            <label th:for="coreCompetency">Core Competency</label>
             <select th:field="*{coreCompetency}">
                 <option th:each="coreCompetency : *{coreCompetencies}"
                         th:value="${coreCompetency}"
